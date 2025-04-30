@@ -7,7 +7,7 @@
     @stack('styles')
     @vite('resources/css/app.css')
     <title>Ulsgram @yield('titulo')</title>
-    @vite('resources/js/app.js')
+    @vite('resources/js/app.jsx')
 
     <link rel="icon" href="{{ asset('img/icono.png') }}">
 
