@@ -9,6 +9,7 @@
     @stack('styles')
 
     <!-- Integración con Vite -->
+    @viteReactRefresh
     @vite(['resources/css/app.css', 'resources/js/app.jsx'])
 
     <title>Ulsgram - @yield('titulo')</title>
@@ -54,13 +55,8 @@
         </div>
     </header>
 
-    <!-- Contenido principal -->
-    <main class="container mx-auto mt-10">
-        <h2 class="font-black text-center text-3xl mb-10">
-            @yield('titulo')
-        </h2>
-        @yield('contenido')
-    </main>
+    <!-- Contenedor React -->
+    <div id="app"></div>
 
     <!-- Pie de página -->
     <footer class="mt-10 text-center p-5 text-gray-500 font-bold uppercase">
