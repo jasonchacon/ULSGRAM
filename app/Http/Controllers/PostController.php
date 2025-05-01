@@ -41,12 +41,12 @@ class PostController extends Controller
         $this->validate($request, [
             'titulo' => 'required|max:255',
             'descripcion' => 'required',
-            'imagen' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+            'imagen' => 'required'
             //para que este funcione hay que ir a crear in div, en create.blade
         ]);
 
         //Luego de las pruebas de value
-        $imagenPath = $request->file('imagen')->store('uploads', 'public');
+
         //Creanos en Post que mandara la información a la base de datos
         //Post::create([
         //    'titulo' => $request->titulo,
