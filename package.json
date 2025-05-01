@@ -6,6 +6,7 @@
     },
     "devDependencies": {
         "@babel/preset-react": "^7.26.3",
+        "@vitejs/plugin-react": "^4.4.1",
         "autoprefixer": "^10.4.15",
         "axios": "^1.1.2",
         "laravel-mix": "^6.0.49",
