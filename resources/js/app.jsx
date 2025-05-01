@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import DropzoneComponent from "./DropzoneComponent";
+import DropzoneComponent from "./components/DropzoneComponent";
 
-const App = () => {
+function App() {
     const [imagen, setImagen] = useState("");
 
     const handleImageUpload = (imageName) => {
@@ -15,6 +15,6 @@ const App = () => {
             <input type="hidden" name="imagen" value={imagen} />
         </div>
     );
-};
+}
 
 export default App;
