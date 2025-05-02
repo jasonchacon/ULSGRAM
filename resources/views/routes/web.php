@@ -24,7 +24,7 @@ use Illuminate\Support\Facades\Route;
 */
 // Ruta para cargar la vista principal con React
 Route::get('/{any}', function () {
-    return view('app'); // Asegúrate de tener un archivo Blade llamado "app.blade.php"
+    return view('home'); // Asegúrate de tener un archivo Blade llamado "app.blade.php"
 })->where('any', '.*');
 
 //Ruta de la vista principal
